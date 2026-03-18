@@ -108,3 +108,44 @@ footer {
   color: #999;
   border-top: 1px solid #f0f0f0;
 }
+
+/* ── 深色模式 ──────────────────────────
+   深色模式切換樣式
+   ──────────────────────────────────── */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+body.dark header {
+  background-color: #333333;
+}
+
+body.dark #chat-box {
+  background-color: #1e1e1e;
+}
+
+body.dark .message.bot {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+body.dark .input-area {
+  border-top: 1px solid #333;
+}
+
+body.dark .input-area input {
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark footer {
+  border-top: 1px solid #333;
+  color: #888;
+}
