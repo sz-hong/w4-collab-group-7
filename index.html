@@ -29,6 +29,7 @@
     </div>
 
     <div class="input-area">
+      <button onclick="clearChat()" style="background-color: #f44336;">清除對話</button>
       <input id="user-input" type="text" placeholder="輸入訊息...">
       <button onclick="sendMessage()">送出</button>
     </div>
@@ -77,6 +78,11 @@
     document.getElementById('user-input').addEventListener('keypress', function (e) {
       if (e.key === 'Enter') sendMessage();
     });
+
+    function clearChat() {
+      const chatBox = document.getElementById('chat-box');
+      chatBox.innerHTML = '';
+    }
 
     function toggleDarkMode() {
       document.body.classList.toggle('dark');
