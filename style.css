@@ -115,10 +115,20 @@ header .subtitle { font-size: 13px; opacity: 0.85; margin-top: 4px; }
 footer {
   padding: 12px 24px;
   text-align: center;
-  font-size: 13px;
-  color: #666;
+  font-size: 12px;
+  color: #999;
   border-top: 1px solid #f0f0f0;
   background-color: #fafafa;
+}
+
+/* ── 組員 E: 清除對話按鈕樣式 ──────────────────
+   ──────────────────────────────────── */
+.input-area button:first-child {
+  background: #f44336; /* 紅色，與送出的藍色區分 */
+}
+
+.input-area button:first-child:hover {
+  background: #d32f2f;
 }
 
 footer p {
